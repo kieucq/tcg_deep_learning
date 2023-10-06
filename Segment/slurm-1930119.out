@@ -1,0 +1,2302 @@
+Lmod has detected the following error: Swap failed: "PrgEnv-gnu" is not
+loaded.
+
+
+
+
+Lmod is automatically replacing "intel/2021.2.0" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-intel/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Lmod is automatically replacing "openmpi/4.0.5" with "cray-mpich/8.1.23".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-hdf5/1.12.2.1
+
+  Genesis                                               Path
+0     neg  /N/project/hurricane-deep-learning/data/ncep_e...
+1     neg  /N/project/hurricane-deep-learning/data/ncep_e...
+2     neg  /N/project/hurricane-deep-learning/data/ncep_e...
+3     neg  /N/project/hurricane-deep-learning/data/ncep_e...
+4     neg  /N/project/hurricane-deep-learning/data/ncep_e...
+creating a positive dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//train/pos/
+creating a negative dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//train/neg/
+creating a segmentation dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//train/seg/
+Creating a segment file:  seg_20080506_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.2 7.2 5.0
+Creating a segment file:  seg_20080513_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 125.1 16.2 5.0
+Creating a segment file:  seg_20080514_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 115.6 11.5 5.0
+Creating a segment file:  seg_20080526_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 140.8 9.9 5.0
+Creating a segment file:  seg_20080617_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 135.1 7.5 5.0
+Creating a segment file:  seg_20080627_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.1 12.2 5.0
+Creating a segment file:  seg_20080627_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 238.0 13.5 5.0
+Creating a segment file:  seg_20080701_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.8 15.4 5.0
+Creating a segment file:  seg_20080711_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 126.1 20.1 5.0
+Creating a segment file:  seg_20080721_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 259.7 13.4 5.0
+Creating a segment file:  seg_20080723_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 133.4 21.5 5.0
+Creating a segment file:  seg_20080803_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 120.35 19.0 5.0
+Creating a segment file:  seg_20080804_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 223.8 10.4 5.0
+Creating a segment file:  seg_20080806_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.1 12.2 5.0
+Creating a segment file:  seg_20080809_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.4 27.3333 5.0
+Creating a segment file:  seg_20080811_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 122.2 23.7 5.0
+Creating a segment file:  seg_20080812_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.3 22.4 5.0
+Creating a segment file:  seg_20080813_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.6 16.3 5.0
+Creating a segment file:  seg_20080816_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.8 13.2 5.0
+Creating a segment file:  seg_20080823_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.5 18.2 5.0
+Creating a segment file:  seg_20080825_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.0 12.8 5.0
+Creating a segment file:  seg_20080902_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.0 18.6 5.0
+Creating a segment file:  seg_20080906_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.7 14.9 5.0
+Creating a segment file:  seg_20080907_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.6 15.8 5.0
+Creating a segment file:  seg_20080909_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 149.5 28.7 5.0
+Creating a segment file:  seg_20080912_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 147.5 28.1 5.0
+Creating a segment file:  seg_20080917_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 141.767 16.4667 5.0
+Creating a segment file:  seg_20080923_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 139.6 11.7 5.0
+Creating a segment file:  seg_20080927_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 139.4 8.2 5.0
+Creating a segment file:  seg_20080927_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 112.9 14.6 5.0
+Creating a segment file:  seg_20081001_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 244.6 16.3 5.0
+Creating a segment file:  seg_20081012_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 109.3 16.8 5.0
+Creating a segment file:  seg_20081017_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 152.2 20.3 5.0
+Creating a segment file:  seg_20081023_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.1 12.3 5.0
+Creating a segment file:  seg_20081102_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.0 8.3 5.0
+Creating a segment file:  seg_20081105_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.8 8.4 5.0
+Creating a segment file:  seg_20081110_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 117.5 14.0 5.0
+Creating a segment file:  seg_20081114_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 121.933 8.16667 5.0
+Creating a segment file:  seg_20081114_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.3 23.0667 5.0
+Creating a segment file:  seg_20090502_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 111.1 9.73333 5.0
+Creating a segment file:  seg_20090613_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.8 9.7 5.0
+Creating a segment file:  seg_20090616_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.8 13.8 5.0
+Creating a segment file:  seg_20090622_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 132.3 10.0 5.0
+Creating a segment file:  seg_20090703_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 259.6 13.0 5.0
+Creating a segment file:  seg_20090708_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.8 17.4 5.0
+Creating a segment file:  seg_20090708_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.8 8.8 5.0
+Creating a segment file:  seg_20090711_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.2 16.4 5.0
+Creating a segment file:  seg_20090712_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.9 10.5 5.0
+Creating a segment file:  seg_20090715_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.6 14.1 5.0
+Creating a segment file:  seg_20090728_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 231.2 10.8 5.0
+Creating a segment file:  seg_20090731_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.8 15.7 5.0
+Creating a segment file:  seg_20090802_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 133.4 20.1 5.0
+Creating a segment file:  seg_20090803_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 242.2 9.7 5.0
+Creating a segment file:  seg_20090803_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.7 12.5 5.0
+Creating a segment file:  seg_20090806_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 140.3 19.2 5.0
+Creating a segment file:  seg_20090807_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 246.1 12.3 5.0
+Creating a segment file:  seg_20090808_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 201.0 10.0 5.0
+Creating a segment file:  seg_20090815_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 162.5 11.4 5.0
+Creating a segment file:  seg_20090820_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 230.3 13.3 5.0
+Creating a segment file:  seg_20090822_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.9 14.3 5.0
+Creating a segment file:  seg_20090826_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 189.1 11.9 5.0
+Creating a segment file:  seg_20090826_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.1 20.1 5.0
+Creating a segment file:  seg_20090826_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.9 9.7 5.0
+Creating a segment file:  seg_20090902_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.05 17.55 5.0
+Creating a segment file:  seg_20090903_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 249.9 11.7 5.0
+Creating a segment file:  seg_20090908_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.0 16.3 5.0
+Creating a segment file:  seg_20090911_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.6 13.9 5.0
+Creating a segment file:  seg_20090911_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 155.0 13.4 5.0
+Creating a segment file:  seg_20090913_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.2 14.4 5.0
+Creating a segment file:  seg_20090920_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.4 12.9 5.0
+Creating a segment file:  seg_20090925_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.425 14.35 5.0
+Creating a segment file:  seg_20090926_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 163.0 10.4 5.0
+Creating a segment file:  seg_20090927_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 147.5 9.9 5.0
+Creating a segment file:  seg_20090928_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.5 15.4 5.0
+Creating a segment file:  seg_20090928_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 163.8 7.3 5.0
+Creating a segment file:  seg_20091008_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 143.667 15.3333 5.0
+Creating a segment file:  seg_20091008_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.4 16.4 5.0
+Creating a segment file:  seg_20091013_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 153.5 9.6 5.0
+Creating a segment file:  seg_20091015_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 229.7 12.3 5.0
+Creating a segment file:  seg_20091018_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 111.2 15.5 5.0
+Creating a segment file:  seg_20091025_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 152.567 11.8 5.0
+Creating a segment file:  seg_20091031_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.0 14.1 5.0
+Creating a segment file:  seg_20091106_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 156.8 20.1 5.0
+Creating a segment file:  seg_20091120_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.9 6.2 5.0
+Creating a segment file:  seg_20091121_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 147.9 5.6 5.0
+Creating a segment file:  seg_20091124_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 107.7 5.8 5.0
+Creating a segment file:  seg_20100615_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.7 14.6 5.0
+Creating a segment file:  seg_20100710_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.6 11.8 5.0
+Creating a segment file:  seg_20100714_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.4 14.3 5.0
+Creating a segment file:  seg_20100717_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 123.3 15.3 5.0
+Creating a segment file:  seg_20100718_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 126.5 25.7 5.0
+Creating a segment file:  seg_20100806_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 126.6 19.7 5.0
+Creating a segment file:  seg_20100820_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.8 18.2 5.0
+Creating a segment file:  seg_20100820_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.6 17.1 5.0
+Creating a segment file:  seg_20100826_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.3 14.5 5.0
+Creating a segment file:  seg_20100827_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 142.2 14.6 5.0
+Creating a segment file:  seg_20100829_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 124.5 24.9 5.0
+Creating a segment file:  seg_20100831_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 145.7 11.8 5.0
+Creating a segment file:  seg_20100903_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.0 19.3 5.0
+Creating a segment file:  seg_20100906_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 124.8 23.9 5.0
+Creating a segment file:  seg_20100913_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.4 16.6 5.0
+Creating a segment file:  seg_20100919_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 149.1 15.4 5.0
+Creating a segment file:  seg_20100920_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.6 19.7 5.0
+Creating a segment file:  seg_20101004_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 110.1 17.5 5.0
+Creating a segment file:  seg_20101011_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 145.0 12.7 5.0
+Creating a segment file:  seg_20101019_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 165.3 12.9 5.0
+Creating a segment file:  seg_20101020_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.5 16.3 5.0
+Creating a segment file:  seg_20101031_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 104.5 6.3 5.0
+Creating a segment file:  seg_20101110_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 111.7 14.4 5.0
+Creating a segment file:  seg_20110505_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.0 10.5 5.0
+Creating a segment file:  seg_20110519_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 141.55 8.3 5.0
+Creating a segment file:  seg_20110531_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 115.9 19.0 5.0
+Creating a segment file:  seg_20110608_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 121.5 13.4 5.0
+Creating a segment file:  seg_20110616_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.0 7.9 5.0
+Creating a segment file:  seg_20110620_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 133.367 11.1667 5.0
+Creating a segment file:  seg_20110710_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 158.3 17.9 5.0
+Creating a segment file:  seg_20110713_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 133.6 15.3 5.0
+Creating a segment file:  seg_20110724_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.5 12.3 5.0
+Creating a segment file:  seg_20110726_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 144.5 9.0 5.0
+Creating a segment file:  seg_20110802_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 164.1 23.7 5.0
+Creating a segment file:  seg_20110808_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 139.4 17.0 5.0
+Creating a segment file:  seg_20110814_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 233.5 12.3 5.0
+Creating a segment file:  seg_20110821_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.8 11.9 5.0
+Creating a segment file:  seg_20110823_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 142.75 15.25 5.0
+Creating a segment file:  seg_20110831_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 258.6 16.5 5.0
+Creating a segment file:  seg_20110901_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 150.3 21.4 5.0
+Creating a segment file:  seg_20110905_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 132.95 18.05 5.0
+Creating a segment file:  seg_20110909_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 144.55 20.35 5.0
+Creating a segment file:  seg_20110913_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 153.7 19.4 5.0
+Creating a segment file:  seg_20110923_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 139.367 12.8 5.0
+Creating a segment file:  seg_20110923_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 110.6 16.2 5.0
+Creating a segment file:  seg_20110926_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 139.2 18.1333 5.0
+Creating a segment file:  seg_20111004_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.3 11.6 5.0
+Creating a segment file:  seg_20111005_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.2 9.7 5.0
+Creating a segment file:  seg_20111009_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 136.3 8.0 5.0
+Creating a segment file:  seg_20111106_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 110.8 13.1 5.0
+Creating a segment file:  seg_20120513_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.3 9.5 5.0
+Creating a segment file:  seg_20120520_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 148.0 11.1 5.0
+Creating a segment file:  seg_20120531_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.5 12.4 5.0
+Creating a segment file:  seg_20120610_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 150.4 6.1 5.0
+Creating a segment file:  seg_20120616_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 112.1 19.1 5.0
+Creating a segment file:  seg_20120625_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 135.25 11.1 5.0
+Creating a segment file:  seg_20120704_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.7 12.1 5.0
+Creating a segment file:  seg_20120710_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 259.4 11.7 5.0
+Creating a segment file:  seg_20120713_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 143.8 18.7 5.0
+Creating a segment file:  seg_20120718_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.55 14.9 5.0
+Creating a segment file:  seg_20120726_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 131.0 10.6 5.0
+Creating a segment file:  seg_20120727_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 148.7 24.75 5.0
+Creating a segment file:  seg_20120801_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.3 22.6667 5.0
+Creating a segment file:  seg_20120803_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 161.867 24.0 5.0
+Creating a segment file:  seg_20120806_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.1 12.4 5.0
+Creating a segment file:  seg_20120811_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 133.3 16.2 5.0
+Creating a segment file:  seg_20120811_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.5 17.5 5.0
+Creating a segment file:  seg_20120817_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 125.9 21.4 5.0
+Creating a segment file:  seg_20120818_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 141.4 13.2 5.0
+Creating a segment file:  seg_20120902_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.4 17.5 5.0
+Creating a segment file:  seg_20120910_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.8 8.6 5.0
+Creating a segment file:  seg_20120911_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.6 15.4 5.0
+Creating a segment file:  seg_20120915_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 237.2 13.2 5.0
+Creating a segment file:  seg_20120919_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 140.7 14.9 5.0
+Creating a segment file:  seg_20120922_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.6 13.5 5.0
+Creating a segment file:  seg_20120923_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 140.5 15.5667 5.0
+Creating a segment file:  seg_20120928_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.3 21.5 5.0
+Creating a segment file:  seg_20120929_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 112.25 13.05 5.0
+Creating a segment file:  seg_20120929_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.3 12.5 5.0
+Creating a segment file:  seg_20121005_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 144.55 14.6 5.0
+Creating a segment file:  seg_20121006_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 242.0 13.5 5.0
+Creating a segment file:  seg_20121012_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 147.15 16.15 5.0
+Creating a segment file:  seg_20121013_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.0 13.8 5.0
+Creating a segment file:  seg_20121021_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 135.0 6.4 5.0
+Creating a segment file:  seg_20121029_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 245.5 13.8 5.0
+Creating a segment file:  seg_20121112_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.1 6.5 5.0
+Creating a segment file:  seg_20130606_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.5 12.9 5.0
+Creating a segment file:  seg_20130616_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.067 11.9333 5.0
+Creating a segment file:  seg_20130619_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 116.8 14.9 5.0
+Creating a segment file:  seg_20130623_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.4 11.8 5.0
+Creating a segment file:  seg_20130627_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 132.5 9.1 5.0
+Creating a segment file:  seg_20130628_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.8 10.7 5.0
+Creating a segment file:  seg_20130706_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 156.2 19.9 5.0
+Creating a segment file:  seg_20130714_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.9 14.05 5.0
+Creating a segment file:  seg_20130725_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 238.2 14.9 5.0
+Creating a segment file:  seg_20130728_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 121.65 12.7 5.0
+Creating a segment file:  seg_20130730_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.4 11.2 5.0
+Creating a segment file:  seg_20130802_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 243.2 12.7 5.0
+Creating a segment file:  seg_20130805_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.133 10.8667 5.0
+Creating a segment file:  seg_20130808_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.3 12.2 5.0
+Creating a segment file:  seg_20130809_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 243.8 11.0 5.0
+Creating a segment file:  seg_20130812_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 220.4 12.0 5.0
+Creating a segment file:  seg_20130815_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 192.7 7.6 5.0
+Creating a segment file:  seg_20130816_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 123.6 23.05 5.0
+Creating a segment file:  seg_20130816_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 131.5 25.8 5.0
+Creating a segment file:  seg_20130820_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.8 13.6 5.0
+Creating a segment file:  seg_20130825_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.95 11.4 5.0
+Creating a segment file:  seg_20130828_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.6 19.3 5.0
+Creating a segment file:  seg_20130829_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 169.1 29.2 5.0
+Creating a segment file:  seg_20130829_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 244.9 15.0 5.0
+Creating a segment file:  seg_20130831_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 121.5 25.6 5.0
+Creating a segment file:  seg_20130904_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.1 17.1 5.0
+Creating a segment file:  seg_20130911_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 148.15 19.65 5.0
+Creating a segment file:  seg_20130913_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 258.6 15.3 5.0
+Creating a segment file:  seg_20130916_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 132.0 17.3 5.0
+Creating a segment file:  seg_20130917_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 112.2 15.4 5.0
+Creating a segment file:  seg_20130919_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 148.5 14.25 5.0
+Creating a segment file:  seg_20130925_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.35 14.85 5.0
+Creating a segment file:  seg_20130929_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 135.0 10.3 5.0
+Creating a segment file:  seg_20130929_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.6 26.3 5.0
+Creating a segment file:  seg_20131001_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.5 18.1 5.0
+Creating a segment file:  seg_20131006_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 242.0 12.9 5.0
+Creating a segment file:  seg_20131008_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 131.6 14.0 5.0
+Creating a segment file:  seg_20131009_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 149.0 14.0 5.0
+Creating a segment file:  seg_20131012_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.9 15.0 5.0
+Creating a segment file:  seg_20131013_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 243.2 12.5 5.0
+Creating a segment file:  seg_20131015_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 148.65 13.9 5.0
+Creating a segment file:  seg_20131017_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 152.6 13.8 5.0
+Creating a segment file:  seg_20131019_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 162.4 9.3 5.0
+Creating a segment file:  seg_20131027_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 142.25 12.7 5.0
+Creating a segment file:  seg_20131101_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 141.0 7.0 5.0
+Creating a segment file:  seg_20131101_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.1 16.0 5.0
+Creating a segment file:  seg_20131102_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 161.6 6.6 5.0
+Creating a segment file:  seg_20131111_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.75 6.0 5.0
+Creating a segment file:  seg_20131119_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 103.3 7.3 5.0
+Creating a segment file:  seg_20140522_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.6 10.1 5.0
+Creating a segment file:  seg_20140609_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 258.7 14.8 5.0
+Creating a segment file:  seg_20140609_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 120.0 20.85 5.0
+Creating a segment file:  seg_20140613_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 116.0 18.8 5.0
+Creating a segment file:  seg_20140628_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.5 14.2 5.0
+Creating a segment file:  seg_20140630_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.0 17.0 5.0
+Creating a segment file:  seg_20140702_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 147.267 8.46667 5.0
+Creating a segment file:  seg_20140706_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 247.0 10.8 5.0
+Creating a segment file:  seg_20140709_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 154.3 8.0 5.0
+Creating a segment file:  seg_20140713_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 231.5 11.0 5.0
+Creating a segment file:  seg_20140716_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 136.8 10.0 5.0
+Creating a segment file:  seg_20140722_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 238.6 10.4 5.0
+Creating a segment file:  seg_20140726_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.1 12.3 5.0
+Creating a segment file:  seg_20140727_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.2 15.7 5.0
+Creating a segment file:  seg_20140727_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.6 11.65 5.0
+Creating a segment file:  seg_20140730_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 242.1 11.3 5.0
+Creating a segment file:  seg_20140802_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.8 12.5 5.0
+Creating a segment file:  seg_20140812_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.0 15.1 5.0
+Creating a segment file:  seg_20140817_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 246.3 16.0 5.0
+Creating a segment file:  seg_20140818_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 117.2 20.9 5.0
+Creating a segment file:  seg_20140902_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.5 17.0 5.0
+Creating a segment file:  seg_20140905_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.5 18.6 5.0
+Creating a segment file:  seg_20140905_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.4 14.0 5.0
+Creating a segment file:  seg_20140909_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 259.9 13.5 5.0
+Creating a segment file:  seg_20140910_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 243.5 12.5 5.0
+Creating a segment file:  seg_20140910_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 142.4 9.9 5.0
+Creating a segment file:  seg_20140917_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 135.0 12.6 5.0
+Creating a segment file:  seg_20140923_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 149.6 17.9 5.0
+Creating a segment file:  seg_20140924_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.4 14.5 5.0
+Creating a segment file:  seg_20140927_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 159.5 9.5 5.0
+Creating a segment file:  seg_20140930_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 259.9 14.7 5.0
+Creating a segment file:  seg_20141001_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 165.7 5.5 5.0
+Creating a segment file:  seg_20141010_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 231.3 9.7 5.0
+Creating a segment file:  seg_20141030_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 140.867 12.7667 5.0
+Creating a segment file:  seg_20141125_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 131.4 8.4 5.0
+Creating a segment file:  seg_20150502_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 144.1 7.4 5.0
+Creating a segment file:  seg_20150528_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.1 10.8 5.0
+Creating a segment file:  seg_20150531_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.8 12.0 5.0
+Creating a segment file:  seg_20150619_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 112.2 14.95 5.0
+Creating a segment file:  seg_20150629_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 160.4 8.6 5.0
+Creating a segment file:  seg_20150701_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.85 13.35 5.0
+Creating a segment file:  seg_20150702_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 171.8 8.3 5.0
+Creating a segment file:  seg_20150706_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 193.967 7.63333 5.0
+Creating a segment file:  seg_20150707_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 223.1 13.4 5.0
+Creating a segment file:  seg_20150708_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 209.5 11.5 5.0
+Creating a segment file:  seg_20150712_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 235.0 13.1 5.0
+Creating a segment file:  seg_20150722_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 125.5 16.3 5.0
+Creating a segment file:  seg_20150722_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 246.6 15.9 5.0
+Creating a segment file:  seg_20150727_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 247.5 6.5 5.0
+Creating a segment file:  seg_20150727_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 236.1 15.1 5.0
+Creating a segment file:  seg_20150729_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 162.2 13.3 5.0
+Creating a segment file:  seg_20150801_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 145.7 28.7 5.0
+Creating a segment file:  seg_20150806_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 230.8 12.4 5.0
+Creating a segment file:  seg_20150806_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 149.3 17.6 5.0
+Creating a segment file:  seg_20150813_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.0 12.15 5.0
+Creating a segment file:  seg_20150814_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 163.5 14.8 5.0
+Creating a segment file:  seg_20150816_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 247.1 16.5 5.0
+Creating a segment file:  seg_20150817_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 211.6 7.7 5.0
+Creating a segment file:  seg_20150819_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 183.2 13.4 5.0
+Creating a segment file:  seg_20150823_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 230.7 12.3 5.0
+Creating a segment file:  seg_20150825_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.1 9.7 5.0
+Creating a segment file:  seg_20150831_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.3 11.8 5.0
+Creating a segment file:  seg_20150904_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.0 10.0 5.0
+Creating a segment file:  seg_20150905_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 141.5 17.9 5.0
+Creating a segment file:  seg_20150913_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 112.933 15.7 5.0
+Creating a segment file:  seg_20150913_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.6 13.9 5.0
+Creating a segment file:  seg_20150917_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 186.6 11.9 5.0
+Creating a segment file:  seg_20150919_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 148.1 13.5 5.0
+Creating a segment file:  seg_20150920_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 246.3 24.3 5.0
+Creating a segment file:  seg_20150923_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 213.7 11.3 5.0
+Creating a segment file:  seg_20150926_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.2 12.7 5.0
+Creating a segment file:  seg_20150930_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.3 11.9 5.0
+Creating a segment file:  seg_20151001_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 200.5 12.8 5.0
+Creating a segment file:  seg_20151001_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 166.9 16.9 5.0
+Creating a segment file:  seg_20151002_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 187.3 12.9 5.0
+Creating a segment file:  seg_20151009_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 229.8 10.6 5.0
+Creating a segment file:  seg_20151012_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 150.75 13.9 5.0
+Creating a segment file:  seg_20151013_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 161.45 12.6 5.0
+Creating a segment file:  seg_20151015_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 243.0 10.2 5.0
+Creating a segment file:  seg_20151019_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 164.1 16.2 5.0
+Creating a segment file:  seg_20151118_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.9 12.9 5.0
+Creating a segment file:  seg_20151123_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 259.5 10.9 5.0
+Creating a segment file:  seg_20160526_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 114.6 17.6 5.0
+Creating a segment file:  seg_20160701_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 245.7 13.3 5.0
+Creating a segment file:  seg_20160702_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 145.2 8.25 5.0
+Creating a segment file:  seg_20160702_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.2 10.8 5.0
+Creating a segment file:  seg_20160706_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.7 11.5 5.0
+Creating a segment file:  seg_20160711_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.8 14.5 5.0
+Creating a segment file:  seg_20160715_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.5 13.5 5.0
+Creating a segment file:  seg_20160716_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.9 18.3 5.0
+Creating a segment file:  seg_20160721_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 249.0 9.5 5.0
+Creating a segment file:  seg_20160721_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 258.5 13.2 5.0
+Creating a segment file:  seg_20160722_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.5 24.7 5.0
+Creating a segment file:  seg_20160725_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 115.9 17.1 5.0
+Creating a segment file:  seg_20160729_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.3 11.9 5.0
+Creating a segment file:  seg_20160731_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 240.2 14.7 5.0
+Creating a segment file:  seg_20160802_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 148.8 16.7 5.0
+Creating a segment file:  seg_20160803_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 243.3 13.8 5.0
+Creating a segment file:  seg_20160806_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.5 17.7 5.0
+Creating a segment file:  seg_20160807_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 163.0 18.8 5.0
+Creating a segment file:  seg_20160812_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.6 16.0 5.0
+Creating a segment file:  seg_20160815_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 117.05 21.8 5.0
+Creating a segment file:  seg_20160816_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 138.1 15.4 5.0
+Creating a segment file:  seg_20160816_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 160.2 25.0 5.0
+Creating a segment file:  seg_20160817_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.5 12.4 5.0
+Creating a segment file:  seg_20160818_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 152.8 22.3 5.0
+Creating a segment file:  seg_20160822_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.1 12.6 5.0
+Creating a segment file:  seg_20160824_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.6 14.3 5.0
+Creating a segment file:  seg_20160826_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 223.6 13.3 5.0
+Creating a segment file:  seg_20160830_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 123.0 20.8 5.0
+Creating a segment file:  seg_20160904_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.0 15.1 5.0
+Creating a segment file:  seg_20160905_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 124.55 24.75 5.0
+Creating a segment file:  seg_20160908_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 143.8 13.2 5.0
+Creating a segment file:  seg_20160909_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.9 26.3 5.0
+Creating a segment file:  seg_20160910_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 246.9 12.3 5.0
+Creating a segment file:  seg_20160911_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 114.3 12.3 5.0
+Creating a segment file:  seg_20160911_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.1 12.4 5.0
+Creating a segment file:  seg_20160918_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.9 16.1 5.0
+Creating a segment file:  seg_20160922_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 144.0 11.0 5.0
+Creating a segment file:  seg_20160924_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 164.6 14.9 5.0
+Creating a segment file:  seg_20160925_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 222.6 11.8 5.0
+Creating a segment file:  seg_20160925_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 240.3 15.3 5.0
+Creating a segment file:  seg_20161003_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 180.5 16.4 5.0
+Creating a segment file:  seg_20161004_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.9 19.25 5.0
+Creating a segment file:  seg_20161012_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.7 12.5 5.0
+Creating a segment file:  seg_20161014_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 145.2 7.2 5.0
+Creating a segment file:  seg_20161030_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.9 10.1 5.0
+Creating a segment file:  seg_20161108_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 162.6 11.3 5.0
+Creating a segment file:  seg_20161109_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 171.0 10.6 5.0
+Creating a segment file:  seg_20161113_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.7 17.5 5.0
+Creating a segment file:  seg_20161123_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 129.9 9.3 5.0
+Creating a segment file:  seg_20170610_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 119.4 13.1667 5.0
+Creating a segment file:  seg_20170701_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 132.2 15.4 5.0
+Creating a segment file:  seg_20170707_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.0 11.2 5.0
+Creating a segment file:  seg_20170711_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.6 12.2 5.0
+Creating a segment file:  seg_20170714_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 114.1 16.0 5.0
+Creating a segment file:  seg_20170716_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 245.1 12.5 5.0
+Creating a segment file:  seg_20170717_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.0 14.1 5.0
+Creating a segment file:  seg_20170719_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 162.1 26.1 5.0
+Creating a segment file:  seg_20170720_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 177.95 22.95 5.0
+Creating a segment file:  seg_20170720_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 116.0 16.1 5.0
+Creating a segment file:  seg_20170721_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 124.05 18.625 5.0
+Creating a segment file:  seg_20170722_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.3 14.1 5.0
+Creating a segment file:  seg_20170725_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.9 12.7 5.0
+Creating a segment file:  seg_20170727_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 117.85 19.2 5.0
+Creating a segment file:  seg_20170731_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 158.3 26.3 5.0
+Creating a segment file:  seg_20170804_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.0 15.9 5.0
+Creating a segment file:  seg_20170810_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 171.9 15.5 5.0
+Creating a segment file:  seg_20170811_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.3 18.5 5.0
+Creating a segment file:  seg_20170817_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.6 13.2 5.0
+Creating a segment file:  seg_20170819_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.1 19.1 5.0
+Creating a segment file:  seg_20170824_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.833 15.3333 5.0
+Creating a segment file:  seg_20170826_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 147.0 17.8 5.0
+Creating a segment file:  seg_20170829_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.0 17.0 5.0
+Creating a segment file:  seg_20170830_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 122.0 18.9 5.0
+Creating a segment file:  seg_20170903_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 132.35 16.0 5.0
+Creating a segment file:  seg_20170908_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 147.1 14.3 5.0
+Creating a segment file:  seg_20170910_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.0 14.3 5.0
+Creating a segment file:  seg_20170911_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.4 16.4 5.0
+Creating a segment file:  seg_20170913_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 258.2 15.9 5.0
+Creating a segment file:  seg_20170914_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.5 16.4 5.0
+Creating a segment file:  seg_20170922_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.7 16.7 5.0
+Creating a segment file:  seg_20170923_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 116.333 17.5333 5.0
+Creating a segment file:  seg_20171008_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 113.4 16.5 5.0
+Creating a segment file:  seg_20171011_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.0 15.5 5.0
+Creating a segment file:  seg_20171015_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.9 8.7 5.0
+Creating a segment file:  seg_20171018_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 115.8 9.1 5.0
+Creating a segment file:  seg_20171019_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 150.8 12.7 5.0
+Creating a segment file:  seg_20171031_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.3 11.05 5.0
+Creating a segment file:  seg_20171031_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 107.8 7.5 5.0
+Creating a segment file:  seg_20171103_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 102.4 7.2 5.0
+Creating a segment file:  seg_20171107_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.2 10.1 5.0
+Creating a segment file:  seg_20171116_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 123.6 7.1 5.0
+Creating a segment file:  seg_20180509_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 153.0 14.5 5.0
+Creating a segment file:  seg_20180510_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 234.6 12.1 5.0
+Creating a segment file:  seg_20180602_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 112.6 12.3 5.0
+Creating a segment file:  seg_20180603_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 131.8 9.7 5.0
+Creating a segment file:  seg_20180606_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.6 14.0 5.0
+Creating a segment file:  seg_20180609_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 259.5 12.1 5.0
+Creating a segment file:  seg_20180613_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 120.3 20.9 5.0
+Creating a segment file:  seg_20180613_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 117.2 21.55 5.0
+Creating a segment file:  seg_20180614_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 260.0 14.9 5.0
+Creating a segment file:  seg_20180623_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 244.1 12.4 5.0
+Creating a segment file:  seg_20180627_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.0 11.7 5.0
+Creating a segment file:  seg_20180627_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.0 18.7 5.0
+Creating a segment file:  seg_20180630_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.2 11.0 5.0
+Creating a segment file:  seg_20180703_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 147.4 9.96667 5.0
+Creating a segment file:  seg_20180713_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.8 19.0 5.0
+Creating a segment file:  seg_20180717_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.9 18.4 5.0
+Creating a segment file:  seg_20180720_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 116.4 18.0 5.0
+Creating a segment file:  seg_20180721_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 158.8 20.6 5.0
+Creating a segment file:  seg_20180723_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.4 15.2 5.0
+Creating a segment file:  seg_20180726_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 238.4 13.0 5.0
+Creating a segment file:  seg_20180726_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 225.0 10.9 5.0
+Creating a segment file:  seg_20180730_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 152.3 26.5 5.0
+Creating a segment file:  seg_20180731_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 244.9 12.3 5.0
+Creating a segment file:  seg_20180802_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 152.8 18.5 5.0
+Creating a segment file:  seg_20180805_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.0 13.7 5.0
+Creating a segment file:  seg_20180806_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.1 18.2 5.0
+Creating a segment file:  seg_20180806_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 237.4 14.8 5.0
+Creating a segment file:  seg_20180809_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 111.7 16.9 5.0
+Creating a segment file:  seg_20180810_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.6 16.1 5.0
+Creating a segment file:  seg_20180813_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 245.3 10.9 5.0
+Creating a segment file:  seg_20180814_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.2 23.25 5.0
+Creating a segment file:  seg_20180815_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 145.1 11.4 5.0
+Creating a segment file:  seg_20180816_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 160.3 11.3 5.0
+Creating a segment file:  seg_20180822_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.65 22.15 5.0
+Creating a segment file:  seg_20180825_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 239.2 12.8 5.0
+Creating a segment file:  seg_20180826_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 160.5 11.0 5.0
+Creating a segment file:  seg_20180827_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.6 14.6 5.0
+Creating a segment file:  seg_20180901_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.2 14.3 5.0
+Creating a segment file:  seg_20180906_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 170.2 11.8 5.0
+Creating a segment file:  seg_20180907_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.1 14.7 5.0
+Creating a segment file:  seg_20180908_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 121.65 20.45 5.0
+Creating a segment file:  seg_20180919_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.7 26.1 5.0
+Creating a segment file:  seg_20180920_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.45 12.35 5.0
+Creating a segment file:  seg_20180925_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.1 14.4 5.0
+Creating a segment file:  seg_20180925_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 155.0 23.8 5.0
+Creating a segment file:  seg_20180926_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 219.9 10.7 5.0
+Creating a segment file:  seg_20180927_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 153.5 6.3 5.0
+Creating a segment file:  seg_20180929_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 258.7 12.0 5.0
+Creating a segment file:  seg_20181014_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.2 17.0 5.0
+Creating a segment file:  seg_20181020_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 160.8 8.25 5.0
+Creating a segment file:  seg_20181102_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 249.0 13.7 5.0
+Creating a segment file:  seg_20181107_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 179.0 7.3 5.0
+Creating a segment file:  seg_20181116_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 113.1 9.9 5.0
+Creating a segment file:  seg_20190624_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.7 17.9 5.0
+Creating a segment file:  seg_20190625_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.2 14.6 5.0
+Creating a segment file:  seg_20190627_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.2 10.3 5.0
+Creating a segment file:  seg_20190630_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.8 10.4 5.0
+Creating a segment file:  seg_20190701_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 114.4 18.1 5.0
+Creating a segment file:  seg_20190706_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 245.1 15.5 5.0
+Creating a segment file:  seg_20190712_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.2 14.1 5.0
+Creating a segment file:  seg_20190714_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 136.35 12.8 5.0
+Creating a segment file:  seg_20190722_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 243.8 14.7 5.0
+Creating a segment file:  seg_20190724_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 136.75 23.1 5.0
+Creating a segment file:  seg_20190727_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 237.1 11.2 5.0
+Creating a segment file:  seg_20190728_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.2 11.1 5.0
+Creating a segment file:  seg_20190729_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 117.0 15.9 5.0
+Creating a segment file:  seg_20190801_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 154.7 17.4 5.0
+Creating a segment file:  seg_20190802_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.3 14.5 5.0
+Creating a segment file:  seg_20190802_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 241.6 12.9 5.0
+Creating a segment file:  seg_20190804_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.6 15.5 5.0
+Creating a segment file:  seg_20190811_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.3 18.2 5.0
+Creating a segment file:  seg_20190819_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 135.1 12.6 5.0
+Creating a segment file:  seg_20190821_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.9 15.0 5.0
+Creating a segment file:  seg_20190824_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 142.5 8.4 5.0
+Creating a segment file:  seg_20190824_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 139.6 8.3 5.0
+Creating a segment file:  seg_20190830_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 126.3 18.2 5.0
+Creating a segment file:  seg_20190830_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 180.1 13.8 5.0
+Creating a segment file:  seg_20190830_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 136.0 6.4 5.0
+Creating a segment file:  seg_20190901_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.8 12.7 5.0
+Creating a segment file:  seg_20190903_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 225.3 14.6 5.0
+Creating a segment file:  seg_20190907_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 123.3 24.2 5.0
+Creating a segment file:  seg_20190912_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 162.0 9.1 5.0
+Creating a segment file:  seg_20190912_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 250.5 15.2 5.0
+Creating a segment file:  seg_20190916_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 253.0 9.9 5.0
+Creating a segment file:  seg_20190917_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.767 20.0667 5.0
+Creating a segment file:  seg_20190924_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 155.0 9.6 5.0
+Creating a segment file:  seg_20191004_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 164.6 15.8 5.0
+Creating a segment file:  seg_20191011_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 198.2 15.4 5.0
+Creating a segment file:  seg_20191015_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 136.167 15.8333 5.0
+Creating a segment file:  seg_20191017_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 234.4 10.5 5.0
+Creating a segment file:  seg_20191017_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 168.6 7.9 5.0
+Creating a segment file:  seg_20191019_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.1 16.9 5.0
+Creating a segment file:  seg_20191028_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 118.2 10.6 5.0
+Creating a segment file:  seg_20191101_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 162.2 9.6 5.0
+Creating a segment file:  seg_20191104_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 113.7 12.7 5.0
+Creating a segment file:  seg_20191109_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 172.45 11.65 5.0
+Creating a segment file:  seg_20191109_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 136.0 14.3 5.0
+Creating a segment file:  seg_20191113_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.2 11.2 5.0
+Creating a segment file:  seg_20191117_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 143.6 10.6 5.0
+Creating a segment file:  seg_20191124_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 159.7 8.6 5.0
+Creating a segment file:  seg_20200508_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 133.95 7.0 5.0
+Creating a segment file:  seg_20200608_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 132.5 10.4 5.0
+Creating a segment file:  seg_20200624_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 228.1 10.0 5.0
+Creating a segment file:  seg_20200629_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 247.9 19.9 5.0
+Creating a segment file:  seg_20200712_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 125.4 17.2 5.0
+Creating a segment file:  seg_20200713_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 249.6 16.6 5.0
+Creating a segment file:  seg_20200719_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 233.6 15.2 5.0
+Creating a segment file:  seg_20200720_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 241.2 14.7 5.0
+Creating a segment file:  seg_20200729_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 123.9 14.4 5.0
+Creating a segment file:  seg_20200730_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 131.2 15.2 5.0
+Creating a segment file:  seg_20200806_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.5 14.2 5.0
+Creating a segment file:  seg_20200808_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 117.3 14.9 5.0
+Creating a segment file:  seg_20200809_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 148.85 25.75 5.0
+Creating a segment file:  seg_20200812_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 232.9 13.1 5.0
+Creating a segment file:  seg_20200816_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 241.8 18.0 5.0
+Creating a segment file:  seg_20200816_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 123.367 17.5 5.0
+Creating a segment file:  seg_20200820_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 122.8 18.7 5.0
+Creating a segment file:  seg_20200825_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.4 16.1 5.0
+Creating a segment file:  seg_20200825_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 242.5 15.0 5.0
+Creating a segment file:  seg_20200826_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 133.9 12.8 5.0
+Creating a segment file:  seg_20200830_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 145.5 24.9 5.0
+Creating a segment file:  seg_20200910_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 142.5 25.7 5.0
+Creating a segment file:  seg_20200912_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.0 15.8 5.0
+Creating a segment file:  seg_20200914_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 127.3 11.0 5.0
+Creating a segment file:  seg_20200919_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 135.6 21.4 5.0
+Creating a segment file:  seg_20200920_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.0 15.7 5.0
+Creating a segment file:  seg_20200925_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 158.7 16.6 5.0
+Creating a segment file:  seg_20200927_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 256.6 12.4 5.0
+Creating a segment file:  seg_20201003_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 140.9 21.0 5.0
+Creating a segment file:  seg_20201004_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 255.8 11.1 5.0
+Creating a segment file:  seg_20201006_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 125.9 13.8 5.0
+Creating a segment file:  seg_20201011_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 119.933 16.7 5.0
+Creating a segment file:  seg_20201014_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 124.0 12.9 5.0
+Creating a segment file:  seg_20201016_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 140.9 6.0 5.0
+Creating a segment file:  seg_20201019_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 139.4 22.6 5.0
+Creating a segment file:  seg_20201021_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 137.4 8.7 5.0
+Creating a segment file:  seg_20201025_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 143.9 10.6 5.0
+Creating a segment file:  seg_20201029_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 149.3 5.3 5.0
+Creating a segment file:  seg_20201103_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 244.5 13.7 5.0
+Creating a segment file:  seg_20201106_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 130.7 10.0 5.0
+Creating a segment file:  seg_20201108_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 134.9 8.0 5.0
+Creating a segment file:  seg_20201117_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.1 14.7 5.0
+Creating a segment file:  seg_20210508_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.4 12.7 5.0
+Creating a segment file:  seg_20210511_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 131.7 6.1 5.0
+Creating a segment file:  seg_20210530_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 257.1 10.8 5.0
+Creating a segment file:  seg_20210610_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 115.4 17.6 5.0
+Creating a segment file:  seg_20210612_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 239.7 11.2 5.0
+Creating a segment file:  seg_20210619_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 151.5 8.6 5.0
+Creating a segment file:  seg_20210625_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 258.7 15.2 5.0
+Creating a segment file:  seg_20210703_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 121.2 13.0 5.0
+Creating a segment file:  seg_20210704_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 128.5 15.8 5.0
+Creating a segment file:  seg_20210714_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 249.4 13.5 5.0
+Creating a segment file:  seg_20210715_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 135.1 16.6 5.0
+Creating a segment file:  seg_20210717_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.4 15.0 5.0
+Creating a segment file:  seg_20210717_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 117.1 18.9 5.0
+Creating a segment file:  seg_20210722_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 146.15 21.45 5.0
+Creating a segment file:  seg_20210726_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 245.3 13.2 5.0
+Creating a segment file:  seg_20210730_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 248.2 11.9 5.0
+Creating a segment file:  seg_20210731_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 252.6 14.4 5.0
+creating a positive dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//test/pos/
+creating a negative dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//test/neg/
+creating a segmentation dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//test/seg/
+Creating a segment file:  seg_20210921_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 119.0 12.9 5.0
+Creating a segment file:  seg_20210922_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 150.0 10.8 5.0
+creating a positive dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//validation/pos/
+creating a negative dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//validation/neg/
+creating a segmentation dir: /N/project/hurricane-deep-learning/data/ncep_extracted_binary_41x161/0h//validation/seg/
+Creating a segment file:  seg_20210801_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 155.4 20.0 5.0
+Creating a segment file:  seg_20210802_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 110.4 20.7 5.0
+Creating a segment file:  seg_20210803_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 124.4 23.7 5.0
+Creating a segment file:  seg_20210803_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 144.35 22.15 5.0
+Creating a segment file:  seg_20210806_12_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 258.1 15.0 5.0
+Creating a segment file:  seg_20210807_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 193.0 7.7 5.0
+Creating a segment file:  seg_20210817_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 145.0 14.9 5.0
+Creating a segment file:  seg_20210823_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 251.1 19.6 5.0
+Creating a segment file:  seg_20210901_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 164.1 24.4 5.0
+Creating a segment file:  seg_20210905_00_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 131.4 11.2 5.0
+Creating a segment file:  seg_20210905_06_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 140.5 12.4 5.0
+Creating a segment file:  seg_20210906_18_00.nc
+('lat', <class 'netCDF4._netCDF4.Dimension'>: name = 'lat', size = 41)
+('lon', <class 'netCDF4._netCDF4.Dimension'>: name = 'lon', size = 161)
+dx, dy, clon, clat, scale:  1.0 1.0 254.2 17.1 5.0
+Done
