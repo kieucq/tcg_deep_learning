@@ -31,99 +31,56 @@
 #       - 01, Nov 22: Modified to include more channels  
 #       - 02, Feb 23: Revised for jupiter-notebook workflow
 #       - 20, Jun 23: Updated for augmentation/dropout layers
+#       - 11, Oct 23: revised for a better workflow for future upgrades
+#                     and sharing
 #
 # AUTH: Chanh Kieu (Indiana University, Bloomington. Email: ckieu@iu.edu) 
 #
 #==========================================================================
 import netCDF4
-#import xarray as xr
 import numpy as np
 import os
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 import cv2
+import random
+import pickle
+import libtcg_netcdfloader as tcg_loader
+import libtcg_utils as tcg_utils
 #
-# define data source and reading pos/neg data 
+# This function returns a kist composing of [numpy data, label] that reads from the
+# set of NETCDF data under netcdf data path
 #
-IMG_SIZE = 30
-#rootdir="/N/project/pfec_climo/qmnguyen/tc_prediction/binary_datasets/ncep_WP_binary_24h/"
-rootdir="/N/slate/ckieu/deep-learning/data/ncep_binary_30x30_00h/training/"
-tcg_class = ['pos','neg']
-array_raw = []
-for tcg in tcg_class:
-    if tcg == "pos":
-        datadir=rootdir + 'pos'
-    else:
-        datadir=rootdir + 'neg'
-    print('Input data dir is: ',datadir)
-    for img in tqdm(os.listdir(datadir)):
-        try:
-            print('Processing file:', img)           
-            file=datadir+'/'+img
-            f = netCDF4.Dataset(file)
-            abv = f.variables['absvprs']
-            nx = np.size(abv[0,0,:])
-            ny = np.size(abv[0,:,0])
-            nz = np.size(abv[:,0,0])
-            print('nx = ',nx,' ny = ',ny )             
-            a2 = np.zeros((nx,ny,12))         
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,0] = abv[1,j,i]    # abs vort at 950 mb
-            rel = f.variables['rhprs'] 
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,1] = rel[7,j,i]    # RH at 750 mb 
-            sfc = f.variables['pressfc']
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,2] = sfc[j,i]      # surface pressure
-            tmp = f.variables['tmpprs']
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,3] = tmp[15,j,i]   # temperature at 400 mb
-            tsf = f.variables['tmpsfc']
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,4] = tsf[j,i]      # surface temperature
-            ugr = f.variables['ugrdprs']
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,5] = ugr[3,j,i]    # u-wind at 900 mb
-                    a2[i,j,6] = ugr[17,j,i]   # u-wind at 300 mb
-            vgr = f.variables['vgrdprs']
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,7] = vgr[3,j,i]    # v-wind at 900 mb
-                    a2[i,j,8] = vgr[17,j,i]   # v-wind at 300 mb
-            hgt = f.variables['hgtprs']
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,9] = hgt[3,j,i]    # geopotential at 850 mb
-            wgr = f.variables['vvelprs']
-            for i in range(a2.shape[0]):
-                for j in range(a2.shape[1]):
-                    a2[i,j,10] = wgr[3,j,i]   # w-wind at 900 mb
-                    a2[i,j,11] = wgr[17,j,i]  # w-wind at 300 mb
-            a3 = cv2.resize(a2, (IMG_SIZE, IMG_SIZE)) 
-            print('a3 shape is :',a3.shape)
-            #input('Enter to continue...')
-            if tcg == "pos":
-                array_raw.append([a3, 1])
-            else:
-                array_raw.append([a3, 0])
-        except Exception as e:
-            pass
+def main(datapath,IMG_SIZE=30):
+    tcg_class = ['pos','neg']
+    array_raw = []
+    for tcg in tcg_class:
+        if tcg == "pos":
+            datadir=datapath + 'pos'
+        else:
+            datadir=datapath + 'neg'
+        print('Input data dir is: ',datadir)
+        for img in tqdm(os.listdir(datadir)):
+            try:
+                file=datadir+'/'+img
+                print('Processing file:', file)
+                a3 = tcg_loader.read12channels(file,IMG_SIZE=IMG_SIZE,number_channels=12)
+                print('Data shape is :',a3.shape)
+                #input('Enter to continue...')
+                if tcg == "pos":
+                    array_raw.append([a3, 1])
+                else:
+                    array_raw.append([a3, 0])
+            except Exception as e:
+                pass
+    return array_raw
 #
-# visualize a few variables for checking the input data
+# This function reads in a list of 4 dim and plot a random field for quick check
 #
-print("Raw input data shape (nsample,nclass,ny,nx,nchannel) is: ",len(array_raw),len(tcg_class),
-      len(array_raw[0][0]),len(array_raw[0][0][0]),len(array_raw[0][0][0][0]))
-check_visualization = "no"
-if check_visualization== "yes":
+def check_visual(array_raw,plot_sample=1):
     print("Plotting one example from raw data input")
-    temp = np.array(array_raw[7][0])
-    plt.figure(figsize=(11, 3)) 
+    temp = np.array(array_raw[plot_sample][0])
+    plt.figure(figsize=(11, 3))
     plt.subplot(1,3,1)
     CS = plt.contour(temp[:,:,4])
     plt.clabel(CS, inline=True, fontsize=10)
@@ -141,29 +98,39 @@ if check_visualization== "yes":
     plt.clabel(CS, inline=True, fontsize=10)
     plt.title('850 mb geopotential')
     plt.grid()
-
     plt.show()
-#
-# randomize data and generate training data (X,y)
-#
-import random
-np.random.shuffle(array_raw)
-X = []
-y = []
-for features,label in array_raw: 
-    X.append(features)
-    y.append(label)
-X = np.array(X).reshape(-1, IMG_SIZE, IMG_SIZE, 12)
-if check_visualization== "yes":
-    print(X.shape)
-    print(y)
-#
-# save training data to an output for subsequent use
-#
-import pickle
-pickle_out = open("tcg_CNNaugment_X.pickle","wb")
-pickle.dump(X, pickle_out)
-pickle_out.close()
-pickle_out = open("tcg_CNNaugment_y.pickle","wb")
-pickle.dump(y, pickle_out)
-pickle_out.close()
+
+if __name__ == '__main__':
+    IMG_SIZE = 30
+    datapath="/N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/ncep_WP_binary_0h/"
+    array_raw = main(datapath=datapath,IMG_SIZE=IMG_SIZE)
+    print("Raw input data shape (nsample,ny,nx,nchannel) is: ",len(array_raw),
+      len(array_raw[0][0]),len(array_raw[0][0][0]),len(array_raw[0][0][0][0]))
+    #
+    # visualize a few variables for checking the input data
+    #
+    check_visualization = "no"
+    if check_visualization== "yes":
+        check_visual(array_raw,plot_sample=7)
+    #
+    # randomize data and generate training data (X,y)
+    #
+    np.random.shuffle(array_raw)
+    X = []
+    y = []
+    for features,label in array_raw: 
+        X.append(features)
+        y.append(label)
+    X = np.array(X).reshape(-1, IMG_SIZE, IMG_SIZE, 12)
+    if check_visualization== "yes":
+        print(X.shape)
+        print(y)
+    #
+    # save training data to an output for subsequent use
+    #
+    pickle_out = open("tcg_CNNaugment_X.pickle","wb")
+    pickle.dump(X, pickle_out)
+    pickle_out.close()
+    pickle_out = open("tcg_CNNaugment_y.pickle","wb")
+    pickle.dump(y, pickle_out)
+    pickle_out.close()
