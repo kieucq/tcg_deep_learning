@@ -29,32 +29,20 @@ DIR STRCUTURE:
 
 2. data: data structure for training/testing of TCG prediction problem
 
-3. CNN-sequential: a simple CNN sequential model that is built from scratch, with only a few
-      convolutionl layers. This model will output a bunch of save-best models that are varying
-      with different number of dense layers, filters, and kernel sizes.
-
-4. CNN-functional: a more tuned CNN functionla model that has some additional options for
-      the accuracy metric. Similar to CNN-sequential model, this model also has a range of
-      model save-best outputs with different number of dense layers, filters, and kernel
-      sizes. There are two versions for this architecture, one is using the binary_accuracy
-      and the other use the F1-score as a metric   
-
-5. CNN-augmentation: the same as CNN-functional but with augmentation and dropout added. Not
+3. CNN-augmentation: the same as CNN-functional but with augmentation and dropout added. Not
       much improvement overall.
 
-6. ResNet: This dir contains a deep ResNet model with 20, 22, and 40 convolutional layers, using
+4. ResNet: This dir contains a deep ResNet model with 20, 22, and 40 convolutional layers, using
       identity block/convolutional blocks as in Andrew Ng's lectures. It will output however
       a single save-best model. Work fine for ResNet-20 but does not perform as well as a 
       simple CNN-functional.
 
-7. InceptionV3: trasnfer learning model using InceptionV3 model, but it does not work currently
-      as the Inception model requires 3-channel input data, while the TCG data are 12-channel
-      arrays. 
+5. UNet: This dir contains segmentation DL model that follows the UNet structure.
 
-8. diagnostics: this dir contains all visualization scripts that can help understand how CNN works
+6. diagnostics: this dir contains all visualization scripts that can help understand how CNN works
       using IG, heatmap, ...
 
-9. preprocess: this dir contains important scripts that generate binary dataset for either storm-following
+7. preprocess: this dir contains important scripts that generate binary dataset for either storm-following
       or large static domains from NCEP renalysis or WRF downscaling
 
 AUTHOR: (C) Chanh Kieu, ckieu@indiana.edu. Open source licences.
