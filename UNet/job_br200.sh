@@ -6,7 +6,7 @@
 #SBATCH -A r00043 
 module load PrgEnv-gnu
 module load python/gpu
-cd /N/u/ckieu/Carbonate/model/deep-learning/Segment/
+cd /N/u/ckieu/Carbonate/model/deep-learning/UNet/
 sed -i 's/0h/6h/' tcg_segment_p0.py 
 python tcg_segment_p0.py
 

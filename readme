@@ -37,7 +37,7 @@ DIR STRCUTURE:
       a single save-best model. Work fine for ResNet-20 but does not perform as well as a 
       simple CNN-functional.
 
-5. UNet: This dir contains segmentation DL model that follows the UNet structure.
+5. UNet: This dir contains DL Unet model that use image segmentation as a target.
 
 6. diagnostics: this dir contains all visualization scripts that can help understand how CNN works
       using IG, heatmap, ...
