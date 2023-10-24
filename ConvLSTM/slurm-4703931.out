@@ -1,15 +1,0 @@
-openmpi version 4.0.1 loaded.
-jasper version 1.900.1 loaded.
-libpng version 1.6.29 loaded.
-szip version 2.1.1 loaded.
-zlib version 1.2.13 loaded.
-HDF5 (Serial) version 1.10.1 loaded.
-Curl version 7.54.0 loaded.
-netcdf/intel/serial version 4.4.1.1 loaded.
-grads version 2.1.1.b0 loaded.
-cudatoolkit version 11.7 loaded.
-Deep Learning stack loaded
-Total arguments input are: 2
-Name of Python script: nwp_convlstm_p1.py
-Input data dir is:  /N/project/hurricane-deep-learning/data/ncep_extracted_41x161_13vars/
-  0%|          | 0/11794 [00:00<?, ?it/s]  0%|          | 25/11794 [01:36<12:33:22,  3.84s/it]

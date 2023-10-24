@@ -87,8 +87,8 @@ def main(rootdir,interval,nx,ny,number_channels,nframe,yyyy):
         except Exception as e:
             pass
         if match_year: j += 1
-        if j > 199: 
-            print("Save the first 200 frames only... stop now")
+        if j > 99: 
+            print("Save the first 100 frames only... stop now")
             break
     return frame
 #
