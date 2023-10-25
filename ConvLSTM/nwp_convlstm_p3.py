@@ -66,55 +66,50 @@ def create_shifted_frames(data,shift=1):
 #
 # function to quick check visualization
 #
-def visulization(train_dataset,channel=1):
-    fig, axes = plt.subplots(2, 4, figsize=(12, 4))
-    data_choice = np.random.choice(range(len(train_dataset)), size=1)[0]
-    #data_choice = 3    
-    print("random choice of data to be plot is: ",data_choice)
-    for idx, ax in enumerate(axes.flat):
-        #print("Plotting figures: ",data_choice,idx,ax)
-        cs=ax.contourf(train_dataset[data_choice,idx,:,:,channel],cmap='coolwarm')#,vmin=0.8,vmax=1)
-        ax.set_title(f"Frame {idx + 1}")
+def visulization(model,val_dataset,channel=1):
+    example = val_dataset[np.random.choice(range(len(val_dataset)), size=1)[0]]
+    print("Example sample is: ",example.shape,np.random.choice(range(len(val_dataset)), size=1)[0])
+    #
+    # pick the first 7 frame as input and make prediction for the last 2 frames
+    #
+    frames = example[:7, ...]
+    original_frames = example[7:, ...]
+    print("Input frames and original frames shapes are: ",frames.shape,original_frames.shape)
+    #
+    # Predict a new set of 2 frames.
+    for _ in range(2):
+    # Extract the model's prediction and post-process it.
+        new_prediction = model.predict(np.expand_dims(frames, axis=0))
+        print("Output from prediction: ",new_prediction.shape,_)
+        new_prediction = np.squeeze(new_prediction, axis=0)
+        print("After squeezing from prediction: ",new_prediction.shape,_)
+        # take the last one from new_prediction and concatenate to the input
+        # frame to serve as a new input frame. Note that y is lagged by 1 relative
+        # to x, i.e., x input from [0-9] corresponds to y output [1-10]. So the
+        # new_prediction will be [1-10] similar to y. Taking the last slice [-1,...]
+        # would mean the prediction at time t = 10, given input x frames from 0-9.
+        predicted_frame = np.expand_dims(new_prediction[-1, ...], axis=0)
+        print("After expanding from prediction: ",predicted_frame.shape,_)
+        # Extend the set of prediction frames.
+        frames = np.concatenate((frames, predicted_frame), axis=0)
+    #
+    # plot the original frame to compare with the predicted frame
+    #
+    fig, axes = plt.subplots(2,2, figsize=(10, 4))
+    for idx, ax in enumerate(axes[0]):
+        cs=ax.contourf(original_frames[idx,:,:,channel],cmap='coolwarm')#,vmin=0.8,vmax=1)
+        ax.set_title(f"Original frame {idx + 1}")
         ax.axis("off")        
         fig.colorbar(cs)
 
-    print(f"Displaying frames for example {data_choice}.")
+    new_frames = frames[7:,...]
+    for idx, ax in enumerate(axes[1]):
+        cs=ax.contourf(new_frames[idx,:,:,channel],cmap='coolwarm')#,vmin=0.8,vmax=1)
+        ax.set_title(f"Predicted frame {idx + 1}")
+        ax.axis("off")
+        fig.colorbar(cs)
+
     plt.show()
-#
-# A function to define a ConvLSTM model. Note that the input layer has no fixed frame size.
-# The model will consist of 3 `ConvLSTM2D` layers with batch normalization, followed by a `Conv3D` 
-# layer for the spatiotemporal outputs, which is similar to Keras' video prediction model based on 
-# ConvLSTM. 
-# 
-# Note that the loss function is important here. Need to implement it right, or otherwise the model
-# will not converge. Check https://neptune.ai/blog/keras-loss-functions for some loss functions.
-#
-def convlstm_prediction_model(x_train):
-    input = layers.Input(shape=(None, *x_train.shape[2:]))
-    print("Input shape is", input.shape)
-    
-    x = layers.ConvLSTM2D(filters=16, kernel_size=(3, 3), padding="same", return_sequences=True, activation="relu")(input)
-    x = layers.BatchNormalization()(x)
-    
-    x = layers.ConvLSTM2D(filters=32,kernel_size=(3, 3),padding="same",return_sequences=True,activation="relu")(x)
-    x = layers.BatchNormalization()(x)
-    
-    x = layers.ConvLSTM2D(filters=32,kernel_size=(1, 1),padding="same",return_sequences=True,activation="relu")(x)
-    
-    x = layers.Conv3D(filters=12, kernel_size=(3, 3, 3), activation="sigmoid", padding="same")(x)
-        
-    model = keras.models.Model(input,x)
-    #model.compile(loss=keras.losses.binary_crossentropy, optimizer=keras.optimizers.Adam())
-    #model.compile(loss=large_scale_loss_function,optimizer='adam')
-    model.compile(loss=tf.keras.losses.MeanAbsolutePercentageError(), optimizer=keras.optimizers.Adam())
-    model.summary()
-    return model
-#
-# creat our own lost function for the problem
-#
-def large_scale_loss_function(y_true, y_pred):
-   squared_difference = tf.square(y_true - y_pred)
-   return tf.reduce_mean(squared_difference, axis=-1)
 #
 # main program
 #
@@ -137,21 +132,15 @@ if __name__ == '__main__':
     print("Training dataset (x,y) shape: " + str(x_train.shape) + ", " + str(y_train.shape))
     print("Validation dataset (x,y) Shape: " + str(x_val.shape) + ", " + str(y_val.shape))
     #
+    # load the best saved model for testing
+    # 
+    bestmodel = "nwp_model_06h"
+    model = tf.keras.models.load_model(bestmodel) 
+    model.summary()
+    #
     # quick visaluzation
     #
-    visualize = "no"
+    visualize = "yes"
     if visualize == "yes":
-        visulization(train_dataset,channel=4)
+        visulization(model,val_dataset,channel=4)
         #visulization(x_train,channel=4)
-    #
-    # define ConvLSTM model and callbacks here before fitting the model
-    #
-    model = convlstm_prediction_model(x_train)
-    bestmodel = "nwp_model_06h"
-    early_stopping = keras.callbacks.EarlyStopping(monitor="val_loss", patience=10)
-    reduce_lr = keras.callbacks.ReduceLROnPlateau(monitor="val_loss", patience=5)    
-    save_best_model = keras.callbacks.ModelCheckpoint(bestmodel,save_best_only=True)
-    epochs = 50
-    batch_size = 32   
-    model.fit(x_train,y_train,batch_size=batch_size,epochs=epochs,
-              validation_data=(x_val, y_val),callbacks=[early_stopping,reduce_lr,save_best_model])
