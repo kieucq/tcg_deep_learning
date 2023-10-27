@@ -106,7 +106,9 @@ def convlstm_prediction_model(x_train):
     model = keras.models.Model(input,x)
     #model.compile(loss=keras.losses.binary_crossentropy, optimizer=keras.optimizers.Adam())
     #model.compile(loss=large_scale_loss_function,optimizer='adam')
-    model.compile(loss=tf.keras.losses.MeanAbsolutePercentageError(), optimizer=keras.optimizers.Adam())
+    model.compile(loss=tf.keras.losses.MeanAbsolutePercentageError(), 
+                  optimizer=keras.optimizers.Adam(),
+                  metrics=[tf.keras.metrics.RootMeanSquaredError()])
     model.summary()
     return model
 #
@@ -151,7 +153,9 @@ if __name__ == '__main__':
     early_stopping = keras.callbacks.EarlyStopping(monitor="val_loss", patience=10)
     reduce_lr = keras.callbacks.ReduceLROnPlateau(monitor="val_loss", patience=5)    
     save_best_model = keras.callbacks.ModelCheckpoint(bestmodel,save_best_only=True)
-    epochs = 50
+    epochs = 30
     batch_size = 32   
-    model.fit(x_train,y_train,batch_size=batch_size,epochs=epochs,
-              validation_data=(x_val, y_val),callbacks=[early_stopping,reduce_lr,save_best_model])
+    history = model.fit(x_train,y_train,batch_size=batch_size,epochs=epochs,
+                        validation_data=(x_val, y_val),callbacks=[early_stopping,reduce_lr,save_best_model])
+    with open('./nwp_convlstm_history.pickle', 'wb') as out:
+        pickle.dump(history.history,out)
