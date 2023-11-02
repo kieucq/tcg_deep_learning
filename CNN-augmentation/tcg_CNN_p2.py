@@ -39,6 +39,7 @@ import tensorflow as tf
 import numpy as np
 import pickle
 import time
+import sys
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.callbacks import TensorBoard
@@ -47,7 +48,7 @@ import libtcg_utils as tcg_utils
 # build a range of CNN models with different number of dense layer, layer sizes, and
 # convolution layers to optimize the performance
 #
-def main(dense_layers=[1],layer_sizes=[32],conv_layers=[3],X=[],y=[]):
+def main(dense_layers=[1],layer_sizes=[32],conv_layers=[3],X=[],y=[],lead_time="00"):
     data_augmentation = keras.Sequential([
         layers.RandomFlip("horizontal"),
         layers.RandomRotation(0.1),
@@ -55,7 +56,7 @@ def main(dense_layers=[1],layer_sizes=[32],conv_layers=[3],X=[],y=[]):
     for dense_layer in dense_layers:
         for layer_size in layer_sizes:
             for conv_layer in conv_layers:
-                NAME = "{}-conv-{}-layer-{}-dense.model_00h".format(conv_layer, layer_size, dense_layer)
+                NAME = "{}-conv-{}-layer-{}-dense.model_{}h".format(conv_layer,layer_size,dense_layer,lead_time)
                 print('--> Running configuration: ',NAME)
 
                 inputs = keras.Input(shape=X.shape[1:])          
@@ -110,6 +111,16 @@ def view_history(history):
     plt.show()
 
 if __name__ == '__main__':
+    n = len(sys.argv)
+    print("Total arguments input are:", n)
+    print("Name of Python script:", sys.argv[0])
+    if n < 2:
+       print("Need a forecast lead time to process...Stop")
+       print("+ Example: tcg_CNN_p2.py 00")
+       exit()
+    leadtime = str(sys.argv[1])
+    print("Forecast lead time to run is: ",leadtime)
+    #sys.exit()
     #
     # read in data output from Part 1 and normalize it
     #
@@ -131,7 +142,7 @@ if __name__ == '__main__':
     LAYER_SIZES = [32]
     CONV_LAYERS = [3, 5]
     history = main(dense_layers=DENSE_LAYER,layer_sizes=LAYER_SIZES,conv_layers=CONV_LAYERS,
-                   X=x_train,y=y_train)
+                   X=x_train,y=y_train,lead_time=leadtime)
   
     check_visualization = "no"
     if check_visualization== "yes": 

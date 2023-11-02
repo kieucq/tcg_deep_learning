@@ -39,6 +39,7 @@
 import cv2
 import tensorflow as tf
 import os
+import sys
 from tqdm import tqdm
 import netCDF4
 import numpy as np
@@ -91,11 +92,32 @@ def main(datadir,bestmodels,test_sample=1000):
     return F1_performance
 
 if __name__ == '__main__':
-    datadir = "/N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/ncep_EP_binary_0h/"
-    bestmodels = ["3-conv-32-layer-0-dense.model_00h","3-conv-32-layer-1-dense.model_00h","3-conv-32-layer-2-dense.model_00h",
-                  "5-conv-32-layer-0-dense.model_00h","5-conv-32-layer-1-dense.model_00h","5-conv-32-layer-2-dense.model_00h"]
+    n = len(sys.argv)
+    print("Total arguments input are:", n)
+    print("Name of Python script:", sys.argv[0])
+    if n < 3:
+       print("Need a forecast lead time and datapath to process...Stop")
+       print("+ Example: tcg_CNN_p2.py 00 /N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/ncep_EP_binary_0h/")
+       exit()
+    leadtime = str(sys.argv[1])
+    datadir = str(sys.argv[2])
+    print("Forecast lead time to run is: ",leadtime)
+    print("Datapath is: ",datadir)
+    #sys.exit()
+
+    #datadir = "/N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/ncep_EP_binary_0h/"
+    #bestmodels = ["3-conv-32-layer-0-dense.model_00h","3-conv-32-layer-1-dense.model_00h","3-conv-32-layer-2-dense.model_00h",
+    #              "5-conv-32-layer-0-dense.model_00h","5-conv-32-layer-1-dense.model_00h","5-conv-32-layer-2-dense.model_00h"]
+    basemodels = ["3-conv-32-layer-0-dense.model_ZZh","3-conv-32-layer-1-dense.model_ZZh","3-conv-32-layer-2-dense.model_ZZh",
+                  "5-conv-32-layer-0-dense.model_ZZh","5-conv-32-layer-1-dense.model_ZZh","5-conv-32-layer-2-dense.model_ZZh"]
+    bestmodels = []
+    for model in basemodels:
+        a=model.replace('ZZ', leadtime)
+        bestmodels.append(a)
+    print(bestmodels)
+
     performance = main(datadir,bestmodels,1000)
     print("========================================")
-    print("Summary of the CNN model performance:")
+    print("Summary of the CNN model performance for forecast lead time: ",leadtime)
     for i in range(len(bestmodels)):
         print("Model:",performance[i][0]," --- F1, Recall, Presision:",np.round(performance[i][1],2))

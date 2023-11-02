@@ -124,7 +124,7 @@ if __name__ == '__main__':
     #
     # read in data output from Part 1 and normalize it
     #
-    year_list = ["2020","2021"]
+    year_list = ["2018","2019","2020","2021"]
     datain = readindata(year_list)
     #
     # normalize and split data into train/validation

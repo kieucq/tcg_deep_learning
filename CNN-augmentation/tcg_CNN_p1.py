@@ -45,6 +45,7 @@ import matplotlib.pyplot as plt
 import cv2
 import random
 import pickle
+import sys
 import libtcg_netcdfloader as tcg_loader
 import libtcg_utils as tcg_utils
 #
@@ -103,6 +104,17 @@ def check_visual(array_raw,plot_sample=1):
 if __name__ == '__main__':
     IMG_SIZE = 30
     datapath="/N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/ncep_WP_binary_0h/"
+    n = len(sys.argv)
+    print("Total arguments input are:", n)
+    print("Name of Python script:", sys.argv[0])
+    if n < 2:
+       print("Need an input data path argument for the year to process...Stop")
+       print("+ Example: tcg_CNN_p1.py /N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/ncep_WP_binary_0h/")
+       exit()
+    datapath = str(sys.argv[1])
+    print("Input data path to run is: ",datapath)
+    #sys.exit()
+
     array_raw = main(datapath=datapath,IMG_SIZE=IMG_SIZE)
     print("Raw input data shape (nsample,ny,nx,nchannel) is: ",len(array_raw),
       len(array_raw[0][0]),len(array_raw[0][0][0]),len(array_raw[0][0][0][0]))
