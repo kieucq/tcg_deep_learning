@@ -1,3 +1,46 @@
+#
+# NOTE: This workflow is for predicting weather, using convolutional LSTM
+#       architechture. The training data is a set of reanalysis data in the
+#       past for one specific domain that are regular gridded at regular
+#       intervals in the NETCDF format. This system consists of three stages
+#       as given below:
+#
+#       - Stage 1: reading NETCDF input and generating training dataset with a
+#                  given image sizes, number of frames, number of sample, and
+#                  number of channels, which are saved by pickle;
+#       - Stage 2: import the saved pickle data and split this data into a lag
+#                  pair (X,Y), with the lag time (forecast lead time) prescribed
+#                  in advance). This stage will then build a convolutional LSTM
+#                  model with a given training/validation ratio, and then save
+#                  the train model under the name "nwp_model_hhh", where hhh is
+#                  forecast lead time. It also saves the history of training
+#                  in the form of pickle format for later analysis.
+#       - Stage 3: testing the performance of the model by importing the best
+#                  trained model from Stage 2, and make a list of prediction
+#                  to be validated with the test data. Note that this stage is
+#                  best to run in the Jupyter notebook mode so the prediction
+#                  can be visuallly checked.
+#
+# INPUT: This Stage 2 script requires an input dataset in the pickle that are 
+#        produced from Stage 1. Note that the input data are given in each year
+#        separately, because Stage 1 takes a long time ro process and so it is
+#        designed to process year by year only. 
+#
+# OUTPUT: A best trained model that is saved as "nwp_model_hhh", where hhh is
+#         forecast lead time, and the training history in the form of pickle 
+#         format for later analysis.
+#
+#         Remark: this script should only be run in the job submission mode 
+#         instead of Jupyter notebook, as it requires a lot of time and memory
+#         that will be crashed easily if running with Jupyter.
+#
+# HIST: - 12, Oct 23: Created by CK
+#       - 10, Nov 23: revised for a better workflow for future upgrades
+#                     and sharing
+#
+# AUTH: Chanh Kieu (Indiana University, Bloomington. Email: ckieu@iu.edu)
+#
+#==========================================================================
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
@@ -99,7 +142,11 @@ def convlstm_prediction_model(x_train):
     x = layers.ConvLSTM2D(filters=32,kernel_size=(3, 3),padding="same",return_sequences=True,activation="relu")(x)
     x = layers.BatchNormalization()(x)
     
-    x = layers.ConvLSTM2D(filters=32,kernel_size=(1, 1),padding="same",return_sequences=True,activation="relu")(x)
+    x = layers.ConvLSTM2D(filters=64,kernel_size=(1, 1),padding="same",return_sequences=True,activation="relu")(x)
+    x = layers.BatchNormalization()(x)
+
+    x = layers.ConvLSTM2D(filters=64,kernel_size=(1, 1),padding="same",return_sequences=True,activation="relu")(x)
+    x = layers.BatchNormalization()(x)
     
     x = layers.Conv3D(filters=12, kernel_size=(3, 3, 3), activation="sigmoid", padding="same")(x)
         
@@ -112,19 +159,25 @@ def convlstm_prediction_model(x_train):
     model.summary()
     return model
 #
-# creat our own lost function for the problem
+# create our own lost function for the problem
 #
 def large_scale_loss_function(y_true, y_pred):
    squared_difference = tf.square(y_true - y_pred)
    return tf.reduce_mean(squared_difference, axis=-1)
 #
-# main program
+# This is main program that builds a Convolutional LSTM model. It requires a list of
+# year to be processed, which are generated from Stage 1 in the pickle format. See
+# the year_list below for any changes needed. It also requires pre-setting the 
+# batch size and epochs for training.
 #
 if __name__ == '__main__':
     #
-    # read in data output from Part 1 and normalize it
+    # read in data output from Part 1 and normalize it. 
     #
-    year_list = ["2018","2019","2020","2021"]
+    year_list = ["2008","2009","2010","2011","2012","2013","2014",
+                 "2015","2016","2017","2018","2019","2020","2021"]
+    epochs = 200
+    batch_size = 16 
     datain = readindata(year_list)
     #
     # normalize and split data into train/validation
@@ -153,8 +206,6 @@ if __name__ == '__main__':
     early_stopping = keras.callbacks.EarlyStopping(monitor="val_loss", patience=10)
     reduce_lr = keras.callbacks.ReduceLROnPlateau(monitor="val_loss", patience=5)    
     save_best_model = keras.callbacks.ModelCheckpoint(bestmodel,save_best_only=True)
-    epochs = 30
-    batch_size = 32   
     history = model.fit(x_train,y_train,batch_size=batch_size,epochs=epochs,
                         validation_data=(x_val, y_val),callbacks=[early_stopping,reduce_lr,save_best_model])
     with open('./nwp_convlstm_history.pickle', 'wb') as out:

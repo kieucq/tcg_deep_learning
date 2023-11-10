@@ -1,37 +1,41 @@
 #
-# NOTE: This machine learning program is for predicting TC formation, using
-#       input dataset in the NETCDF format. The program treats different 
-#       2D input fields as different channels of an image. This specific 
-#       program requires a set of 12 2D-variables (12-channel image) and 
-#       consists of three stages
-#       - Stage 1: reading NETCDF input and generating (X,y) data with a 
-#                  given image sizes, which are then saved by pickle;
-#       - Stage 2: import the saved pickle (X,y) pair and build a CNN model
-#                  with a given training/validation ratio, and then save
-#                  the train model under tcg_CNN.model.
-#       - Stage 3: import the trained model from Stage 2, and make a list
-#                  of prediction from normalized test data. 
+# NOTE: This workflow is for predicting weather, using convolutional LSTM
+#       architechture. The training data is a set of reanalysis data in the 
+#       past for one specific domain that are regular gridded at regular 
+#       intervals in the NETCDF format. This system consists of three stages
+#       as given below: 
+#       
+#       - Stage 1: reading NETCDF input and generating training dataset with a 
+#                  given image sizes, number of frames, number of sample, and
+#                  number of channels, which are saved by pickle;
+#       - Stage 2: import the saved pickle data and split this data into a lag
+#                  pair (X,Y), with the lag time (forecast lead time) prescribed 
+#                  in advance). This stage will then build a convolutional LSTM
+#                  model with a given training/validation ratio, and then save
+#                  the train model under the name "nwp_model_hhh", where hhh is
+#                  forecast lead time. It also saves the history of training
+#                  in the form of pickle format for later analysis.
+#       - Stage 3: testing the performance of the model by importing the best 
+#                  trained model from Stage 2, and make a list of prediction 
+#                  to be validated with the test data. Note that this stage is
+#                  best to run in the Jupyter notebook mode so the prediction
+#                  can be visuallly checked. 
 #
-# INPUT: This Stage 1 script requires two specific input datasets, including
-#       1. 7 meterological vars u, v,abs vort, tmp, RH, vvels, sst, cape  
-#          corresponding to negative cases (i.e. no TC formation within the 
-#          domain). 
-#       2. Similar data but for positive cases (i.e., there is a TC centered
-#          on the domain)  
-#        Remarks: Note that these data must be on the standard 19 vertical
+# INPUT: This Stage 1 script requires an input dataset in the NETCDF that contains
+#        regular time frequency (e.g, every 3 or 6 hours), and should include
+#        all basic meterological variables such as u, v, T, RH, pressure,...  
+#
+#        Remarks: Note that these data should be on the standard 19 vertical
 #        levels 1000, 975, 950, 925, 900, 850, 800, 750, 700, 650, 600, 
 #        550, 500, 450, 400, 350, 300, 250, 200. Also, all field vars must
-#        be resize to cover an area of 30x30 around the TC center for the 
-#        positive data cases.
+#        be resized to cover an area of interest.  
 #
-# OUTPUT: A set of pairs (X,y) needed for CNN training
+# OUTPUT: A set of training data in the with shape (sample_size, ny, nx, nchannel).
+#        Note that array setting for NETCDF and Python are arraged such that
+#        ny is the number of rows (depth), while nx is the number of col (width).  
 #
-# HIST: - 25, Oct 22: Created by CK
-#       - 27, Oct 22: Added a classification loop to simplify the code
-#       - 01, Nov 22: Modified to include more channels  
-#       - 02, Feb 23: Revised for jupiter-notebook workflow
-#       - 20, Jun 23: Updated for augmentation/dropout layers
-#       - 11, Oct 23: revised for a better workflow for future upgrades
+# HIST: - 12, Oct 23: Created by CK
+#       - 10, Nov 23: revised for a better workflow for future upgrades
 #                     and sharing
 #
 # AUTH: Chanh Kieu (Indiana University, Bloomington. Email: ckieu@iu.edu) 
@@ -112,9 +116,12 @@ def check_visual(array_raw,plot_sample=1):
     #plt.clabel(CS, inline=True, fontsize=10)
     #plt.title('t=-2')
     #plt.grid()
-
     plt.show()
-
+#
+# This is the main program. Need to edit several parameters including
+# rootdir, img_nx, img_ny, number_channels, nframe, interval_hr. See the
+# section below for where to change these parameters.
+#
 if __name__ == '__main__':
     n = len(sys.argv)
     print("Total arguments input are:", n)
@@ -135,7 +142,8 @@ if __name__ == '__main__':
     array_raw = main(rootdir,interval_hr,img_nx,img_ny,number_channels,nframe,yyyy)
     print("Raw output shape (nsample,nframe,ny,nx,nchannel) is: ",array_raw.shape)
     #
-    # visualize a few variables for checking the input data
+    # visualize a few variables for checking the input data. SHould be "no" 
+    # if running in the job submission mode at all times.
     #
     check_visualization = "no"
     if check_visualization== "yes":
