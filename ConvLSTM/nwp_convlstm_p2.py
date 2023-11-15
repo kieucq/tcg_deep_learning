@@ -177,7 +177,7 @@ if __name__ == '__main__':
     year_list = ["2008","2009","2010","2011","2012","2013","2014",
                  "2015","2016","2017","2018","2019","2020","2021"]
     epochs = 200
-    batch_size = 16 
+    batch_size = 32 
     datain = readindata(year_list)
     #
     # normalize and split data into train/validation
