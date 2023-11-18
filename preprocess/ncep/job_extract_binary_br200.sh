@@ -14,7 +14,7 @@ bestrack_dir="${data_dir}/tc/ibtracs.ALL.list.v04r00.csv"
 
 domain_size=18
 lead_time=0
-basin="WP"
+basin="EP"
 pos_neg_dist=35
 for lead_time in 00 06 12 18 24 30 36 42 48 54 60 66 72;
 do

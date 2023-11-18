@@ -19,17 +19,20 @@
 #        2. tcg_ResNet_y.pickle: data contains all labels of each image (i.e., 
 #           yes or no) of TCG corresponding to each data in X.
 #
-#        Remarks: Note that each channel must be normalized separealy. Also
+#        Remarks: Note that each channel must be normalized separately. Also,
 #        the script requires a large memory allocation. So users need to have
 #        GPU version to run this.
 #
 # OUTPUT: The best ResNet model built from Keras that is saved under 
 #        tcg_ResNet.model
 #
-# HIST: - 27, May 23: Created by CK from the open sourse ResNet50 model in 
+# HIST: - 27, May 23: Created by CK from the open source ResNet50 model in 
 #                     the deep learning course.
 #       - 12, Jun 23: Added ResNet-20, and ResNet-22 model and re-organized the
 #                     workflow for better fit with the TCG prediction problem.
+#       - 18, Nov 23: re-designed the workflow for better maintenance in the 
+#                     future. Also the histories are saved in pickle for Stage 3
+#                     to make it easier to check.
 #
 # AUTH: Chanh Kieu (Indiana University, Bloomington. Email: ckieu@iu.edu)
 #===============================================================================
@@ -46,8 +49,11 @@ from tensorflow.keras.models import Model, load_model
 from tensorflow.keras.initializers import random_uniform, glorot_uniform, constant, identity
 from tensorflow.python.framework.ops import EagerTensor
 from matplotlib.pyplot import imshow
+import pickle
+import sys
+import libtcg_utils as tcg_utils
 #
-# Bulding the identity_block for ResNet with 3 convolutional layers
+# Building the identity_block for ResNet with 3 convolutional layers
 #
 def identity_block(X, f, filters, training=True, initializer=random_uniform):        
     # Retrieve Filters
@@ -56,7 +62,7 @@ def identity_block(X, f, filters, training=True, initializer=random_uniform):
     # Save the input value. Will need this later to add back to the main path. 
     X_shortcut = X
     
-    # First component of main path
+    # First component of the main path
     X = Conv2D(filters = F1, kernel_size = 1, strides = (1,1), padding = 'valid', kernel_initializer = initializer(seed=0))(X)
     X = BatchNormalization(axis = 3)(X, training = training) # Default axis
     X = Activation('relu')(X)
@@ -240,65 +246,38 @@ def ResNet20(input_shape = (30, 30, 12), classes = 1):
     model = Model(inputs = X_input, outputs = X)
     return model
 #
-# read in data output from Stage 1
-#
-import pickle
-pickle_in = open("tcg_ResNet_X.pickle","rb")
-X = pickle.load(pickle_in)
-pickle_in = open("tcg_ResNet_y.pickle","rb")
-Y = pickle.load(pickle_in)
-Y = np.array(Y)
-number_channels=X.shape[3]
-print('Input shape of the X features data: ',X.shape)
-print('Input shape of the Y label data: ',Y.shape)
-print('Number of input channel extracted from X is: ',number_channels)
-#
-# normalize the data before training the model
-#
-nsample = X.shape[0]
-for i in range(nsample):
-    for var in range(number_channels):    
-        maxvalue = X[i,:,:,var].flat[np.abs(X[i,:,:,var]).argmax()]
-        #print('Normalization factor for sample and channel',i,var,', is: ',abs(maxvalue))
-        X[i,:,:,var] = X[i,:,:,var]/abs(maxvalue)
-        #maxnew = X[i,:,:,var].flat[np.abs(X[i,:,:,var]).argmax()]
-        #print('-->After normalization of sample and channel',i,var,', is: ',abs(maxnew))
-        #input('Enter to continue...')
-print("Finish normalization...")
-print ("number of input examples = " + str(X.shape[0]))
-print ("X shape: " + str(X.shape))
-print ("Y shape: " + str(Y.shape))
-#
 # call ResNet model and printout the summary. Note that the number of parameters for the
 # batch normalization is computed as 4x # of filter due to the use of 4 parameters:
 # [gamma weights, beta weights, moving_mean(non-trainable), moving_variance(non-trainable)]
 # for each filter normalization.
 #
-resnets = ['ResNet20', 'ResNet22', 'ResNet40']
-for resnet in resnets:
-    if resnet == "ResNet20":
-        model = ResNet20(input_shape = (30, 30, 12), classes = 1)
-    elif resnet == "ResNet22":
-        model = ResNet22(input_shape = (30, 30, 12), classes = 1)    
-    elif resnet == "ResNet40":
-        model = ResNet40(input_shape = (30, 30, 12), classes = 1)
-    model.summary()
-    model.compile(optimizer='adam',
-                  loss='binary_crossentropy',
-                  metrics=[tf.keras.metrics.BinaryAccuracy(name="binary_accuracy", dtype=None, threshold=0.3)])
-    callbacks=[keras.callbacks.ModelCheckpoint("tcg_" + resnet + ".model",save_best_only=True)]
-    history = model.fit(X, Y, epochs = 100, batch_size = 128, validation_split=0.1, callbacks=callbacks)
+def main(resnet_models=['ResNet20'],X=[],y=[],lead_time='00'):
+    histories = []
+    for resnet in resnet_models:
+        NAME = "model_{}_{}h".format(resnet,lead_time)
+        print('--> Running configuration: ',NAME)
+        if resnet == "ResNet20":
+            model = ResNet20(input_shape = (X.shape[1], X.shape[2], X.shape[3]), classes = 1)
+        elif resnet == "ResNet22":
+            model = ResNet22(input_shape = (X.shape[1], X.shape[2], X.shape[3]), classes = 1)
+        elif resnet == "ResNet40":
+            model = ResNet40(input_shape = (X.shape[1], X.shape[2], X.shape[3]), classes = 1)
+        model.summary()
+        model.compile(optimizer='adam',
+                      loss='binary_crossentropy',
+                      metrics=[tf.keras.metrics.BinaryAccuracy(name="binary_accuracy", dtype=None, threshold=0.3)])
+        callbacks=[keras.callbacks.ModelCheckpoint("tcg_" + resnet + ".model_" + str(lead_time),save_best_only=True)]
+        hist = model.fit(X, Y, epochs = 100, batch_size = 128, validation_split=0.1, callbacks=callbacks)
+        histories.append(hist.history)
+    return histories
 #
-# visualization checking
+# Visualize the output of the training model (work for jupyter notebook only)
 #
-import matplotlib.pyplot as plt
-check_visualization = "no"
-if check_visualization== "yes":
-    #print(history.__dict__)
-    #print(history.history)
+def view_history(history):
+    import matplotlib.pyplot as plt
     val_accuracy = history.history['val_binary_accuracy']
     accuracy = history.history['binary_accuracy']
-    epochs = history.epoch 
+    epochs = history.epoch
     plt.plot(epochs,val_accuracy,'r',label="val binary_accuracy")
     plt.plot(epochs,accuracy,'b',label="train binary_accuracy")
     plt.legend()
@@ -310,4 +289,45 @@ if check_visualization== "yes":
     plt.plot(epochs,loss,'b',label="train loss")
     plt.legend()
     plt.show()
+#
+# main function
+#
+if __name__ == '__main__':
+    n = len(sys.argv)
+    print("Total arguments input are:", n)
+    print("Name of Python script:", sys.argv[0])
+    if n < 2:
+       print("Need a forecast lead time to process...Stop")
+       print("+ Example: tcg_ResNet_p2.py 00")
+       exit()
+    leadtime = str(sys.argv[1])
+    print("Forecast lead time to run is: ",leadtime)
+    #sys.exit()
+    #
+    # read in data output from Part 1 and normalize it
+    #
+    pickle_in = open("tcg_ResNet_X.pickle","rb")
+    X = pickle.load(pickle_in)
+    pickle_in = open("tcg_ResNet_y.pickle","rb")
+    y = pickle.load(pickle_in)
+    Y = np.array(y)
+    number_channels=X.shape[3]
+    print('Input shape of the X features data: ',X.shape)
+    print('Input shape of the y label data: ',Y.shape)
+    print('Number of input channel extracted from X is: ',number_channels)
 
+    x_train,y_train = tcg_utils.normalize_channels(X,Y)
+    print ("number of input examples = " + str(X.shape[0]))
+    print ("X shape: " + str(X.shape))
+    print ("Y shape: " + str(Y.shape))
+    #
+    # define the model architecture
+    #
+    resnets = ['ResNet20', 'ResNet22', 'ResNet40']
+    histories = main(resnet_models=resnets,X=x_train,y=y_train,lead_time=leadtime)
+    with open('./tcg_histories_resnet.pickle', 'wb') as out:
+        pickle.dump(histories,out)
+
+    check_visualization = "no"
+    if check_visualization== "yes":
+        view_history(histories)

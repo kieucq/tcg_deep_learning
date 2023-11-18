@@ -37,6 +37,7 @@
 # HIST: - 12, Oct 23: Created by CK
 #       - 10, Nov 23: revised for a better workflow for future upgrades
 #                     and sharing
+#       - 16, Nov 23: Added 3-channel option for data generator
 #
 # AUTH: Chanh Kieu (Indiana University, Bloomington. Email: ckieu@iu.edu) 
 #
@@ -76,8 +77,15 @@ def main(rootdir,interval,nx,ny,number_channels,nframe,yyyy):
                 match_year = re.search("fnl_", infile)
             #print('---> Last cycle/file:',last_cycle,last_file,match_year)
             if os.path.isfile(last_file) and match_year:
-                a = tcg_loader.frame12channels(rootdir,cycle,interval=interval,
-                    nx=nx,ny=ny,number_channels=number_channels,nframe=nframe)
+                if number_channels == 12:  
+                    a = tcg_loader.frame12channels(rootdir,cycle,interval=interval,
+                        nx=nx,ny=ny,number_channels=number_channels,nframe=nframe)
+                elif number_channels == 3:
+                    a = tcg_loader.frame3channels(rootdir,cycle,interval=interval,
+                        nx=nx,ny=ny,number_channels=number_channels,nframe=nframe)
+                else:
+                    print("Channels must be 3 or 12 at the moment...exit")
+                    exit()
                 print('Data shape is :',a.shape,cycle)
                 if i == 0:
                     frame[0,:,:,:,:] = a[:,:,:,:]
@@ -136,7 +144,7 @@ if __name__ == '__main__':
     rootdir="/N/project/hurricane-deep-learning/data/ncep_extracted_41x161_13vars/"
     img_nx = 161             # number of lon points/width/col
     img_ny = 41              # number of lat points/depth/row
-    number_channels = 12     # number of channels 
+    number_channels = 3      # number of channels 
     nframe = 9               # number of time frames
     interval_hr = -6         # hor interval between frames
     array_raw = main(rootdir,interval_hr,img_nx,img_ny,number_channels,nframe,yyyy)
@@ -152,7 +160,7 @@ if __name__ == '__main__':
     # randomize data and save training data to an output for subsequent use
     #
     np.random.shuffle(array_raw)
-    outfile = "nwp_convlstm_"+yyyy+".pickle"
+    outfile = "nwp_convlstm_"+yyyy+"_"+str(number_channels)+".pickle"
     pickle_out = open(outfile,"wb")
     pickle.dump(array_raw, pickle_out)
     pickle_out.close()

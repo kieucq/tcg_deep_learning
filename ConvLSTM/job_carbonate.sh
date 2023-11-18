@@ -16,6 +16,9 @@ cd /N/u/ckieu/BigRed200/model/deep-learning/ConvLSTM
 #python nwp_convlstm_p1.py 2011
 #python nwp_convlstm_p1.py 2012
 #python nwp_convlstm_p1.py 2013
-python nwp_convlstm_p1.py 2008
+#python nwp_convlstm_p1.py 2008
 python nwp_convlstm_p1.py 2009
-
+python nwp_convlstm_p1.py 2010
+python nwp_convlstm_p1.py 2011
+python nwp_convlstm_p1.py 2012
+python nwp_convlstm_p1.py 2013

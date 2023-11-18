@@ -37,6 +37,7 @@
 # HIST: - 12, Oct 23: Created by CK
 #       - 10, Nov 23: revised for a better workflow for future upgrades
 #                     and sharing
+#       - 16, Nov 23: added number of channels option 
 #
 # AUTH: Chanh Kieu (Indiana University, Bloomington. Email: ckieu@iu.edu)
 #
@@ -132,7 +133,7 @@ def visulization(train_dataset,channel=1):
 # Note that the loss function is important here. Need to implement it right, or otherwise the model
 # will not converge. Check https://neptune.ai/blog/keras-loss-functions for some loss functions.
 #
-def convlstm_prediction_model(x_train):
+def convlstm_prediction_model(x_train,number_channels=3):
     input = layers.Input(shape=(None, *x_train.shape[2:]))
     print("Input shape is", input.shape)
     
@@ -148,7 +149,7 @@ def convlstm_prediction_model(x_train):
     x = layers.ConvLSTM2D(filters=64,kernel_size=(1, 1),padding="same",return_sequences=True,activation="relu")(x)
     x = layers.BatchNormalization()(x)
     
-    x = layers.Conv3D(filters=12, kernel_size=(3, 3, 3), activation="sigmoid", padding="same")(x)
+    x = layers.Conv3D(filters=number_channels, kernel_size=(3, 3, 3), activation="sigmoid", padding="same")(x)
         
     model = keras.models.Model(input,x)
     #model.compile(loss=keras.losses.binary_crossentropy, optimizer=keras.optimizers.Adam())
@@ -172,12 +173,15 @@ def large_scale_loss_function(y_true, y_pred):
 #
 if __name__ == '__main__':
     #
-    # read in data output from Part 1 and normalize it. 
+    # read in data output from Part 1, which is in the format yyyy_nc with nc being
+    # the number of channels. 
     #
-    year_list = ["2008","2009","2010","2011","2012","2013","2014",
-                 "2015","2016","2017","2018","2019","2020","2021"]
+    #year_list = ["2008","2009","2010","2011","2012","2013","2014",
+    #             "2015","2016","2017","2018","2019","2020","2021"]
+    year_list = ["2008_3","2009_3"]
     epochs = 200
     batch_size = 32 
+    number_channels = 3
     datain = readindata(year_list)
     #
     # normalize and split data into train/validation
@@ -201,8 +205,8 @@ if __name__ == '__main__':
     #
     # define ConvLSTM model and callbacks here before fitting the model
     #
-    model = convlstm_prediction_model(x_train)
-    bestmodel = "nwp_model_06h"
+    model = convlstm_prediction_model(x_train,number_channels=number_channels)
+    bestmodel = "nwp_model_06h_"+str(number_channels)
     early_stopping = keras.callbacks.EarlyStopping(monitor="val_loss", patience=10)
     reduce_lr = keras.callbacks.ReduceLROnPlateau(monitor="val_loss", patience=5)    
     save_best_model = keras.callbacks.ModelCheckpoint(bestmodel,save_best_only=True)
