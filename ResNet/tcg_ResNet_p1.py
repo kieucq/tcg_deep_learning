@@ -110,15 +110,17 @@ def check_visual(array_raw,plot_sample=1):
 if __name__ == '__main__':
     IMG_SIZE = 32
     nchannels = 12
-    datapath="/N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/WP/00/"
+    leadtime = "00"
+    datapath="/N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/WP/"+leadtime+"/"
     n = len(sys.argv)
     print("Total arguments input are:", n)
     print("Name of Python script:", sys.argv[0])
-    if n < 2:
+    if n < 3:
        print("Need an input data path argument for the year to process...Stop")
-       print("+ Example: tcg_ResNet_p1.py /N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/WP/00/")
+       print("+ Example: tcg_ResNet_p1.py /N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/WP 00")
        exit()
-    datapath = str(sys.argv[1])
+    leadtime = str(sys.argv[2])
+    datapath = str(sys.argv[1]) + "/" + leadtime + "/"
     print("Input data path to run is: ",datapath)
     #sys.exit()
 
