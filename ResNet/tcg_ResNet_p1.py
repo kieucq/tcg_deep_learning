@@ -110,23 +110,22 @@ def check_visual(array_raw,plot_sample=1):
 if __name__ == '__main__':
     IMG_SIZE = 32
     nchannels = 12
-    leadtime = "00"
-    datapath="/N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/WP/"+leadtime+"/"
+    #leadtime = "00"
+    #datapath="/N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/WP/"+leadtime+"/"
     n = len(sys.argv)
     print("Total arguments input are:", n)
     print("Name of Python script:", sys.argv[0])
     if n < 3:
        print("Need an input data path argument for the year to process...Stop")
-       print("+ Example: tcg_ResNet_p1.py /N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/WP 00")
+       print("+ Example: tcg_ResNet_p1.py 00 /N/project/hurricane-deep-learning/data/ncep_extracted_binary_30x30/WP")
        exit()
-    leadtime = str(sys.argv[2])
-    datapath = str(sys.argv[1]) + "/" + leadtime + "/"
+    leadtime = str(sys.argv[1])
+    datapath = str(sys.argv[2]) + "/" + leadtime + "/"
     print("Input data path to run is: ",datapath)
-    #sys.exit()
 
     array_raw = main(datapath=datapath,IMG_SIZE=IMG_SIZE,number_channels=nchannels)
     print("Raw input data shape (nsample,ny,nx,nchannel) is: ",len(array_raw),
-      len(array_raw[0][0]),len(array_raw[0][0][0]),len(array_raw[0][0][0][0]))
+           len(array_raw[0][0]),len(array_raw[0][0][0]),len(array_raw[0][0][0][0]))
     #
     # visualize a few variables for checking the input data
     #
