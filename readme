@@ -45,4 +45,6 @@ DIR STRCUTURE:
 7. preprocess: this dir contains important scripts that generate binary dataset for either storm-following
       or large static domains from NCEP renalysis or WRF downscaling
 
+8. ViT: vision transformer model
+
 AUTHOR: (C) Chanh Kieu, ckieu@indiana.edu. Open source licences.
